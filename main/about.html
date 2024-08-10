@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISIS 101: Survey Form</title>
+    <link rel="stylesheet" href="./stylea.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="about.html">Survey</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1 class="quiz-title">CRISIS 101: Survey Form</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name</label>
+                <input type="text" name="FirstName">
+                <label>Last Name</label>
+                <input type="text" name="LastName">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience & Awareness</legend>
+                <label>Have you ever experienced a natural disaster?</label>
+                <select id="dropdown" name="experience">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label>Are you aware of the natural disasters common in your area?</label>
+                <label class="checkbox"><input type="checkbox" name="awareness" value="Yes"> Yes</label>
+                <label class="checkbox"><input type="checkbox" name="awareness" value="No"> No</label>
+                <label class="checkbox"><input type="checkbox" name="awareness" value="Maybe"> Maybe</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preparedness</legend>
+                <p>What are some important items to have in a disaster preparedness kit? (Check all that apply)</p>
+                <label class="checkbox"><input type="checkbox" name="kit" value="Water"> Water</label>
+                <label class="checkbox"><input type="checkbox" name="kit" value="First Aid Kit"> First Aid Kit</label>
+                <label class="checkbox"><input type="checkbox" name="kit" value="Blanket/ warm clothes"> Blanket/warm clothes</label>
+                <label class="checkbox"><input type="checkbox" name="kit" value="Non-perishable food"> Non-perishable food</label>
+                <label class="checkbox"><input type="checkbox" name="kit" value="Personal hygiene items"> Personal hygiene items</label>
+
+                <label>Do you live in a disaster-prone area?</label>
+                <label class="checkbox"><input type="checkbox" name="prone_area" value="Yes"> Yes</label>
+                <label class="checkbox"><input type="checkbox" name="prone_area" value="No"> No</label>
+                <label class="checkbox"><input type="checkbox" name="prone_area" value="Not sure"> Not sure</label>
+
+                <label>Do you have any friends/relatives that have witnessed a natural disaster?</label>
+                <label class="checkbox"><input type="checkbox" name="witness" value="Yes"> Yes</label>
+                <label class="checkbox"><input type="checkbox" name="witness" value="No"> No</label>
+
+                <label>What steps will you take to prepare yourself for a natural disaster?</label>
+                <textarea name="preparation" rows="5" cols="30"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CRISIS 101. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

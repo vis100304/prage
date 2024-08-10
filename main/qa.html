@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styleq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="qa.html">Q&A</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="quiz-title">QUIZ</h1>
+    
+    <section class="content">
+        <h3>Here's Why Taking Quiz Is Important</h3>
+        <p>Taking a quiz on disaster management is important because it helps assess and enhance one's understanding of how to effectively respond to various emergencies, such as natural disasters or human-made crises...</p>
+        
+        <h4 class="question">1. Which of the following items is essential in an emergency supply kit?</h4>
+        <input type="radio" name="q1" id="correct1"> Flashlight<br>
+        <input type="radio" name="q1" id="wrong1"> Photo Album<br>
+        <input type="radio" name="q1" id="wrong2"> Video game console<br>
+        <input type="radio" name="q1" id="wrong3"> Microwave Oven<br>
+        
+        <h4 class="question">2. How often should you practice your family emergency plan?</h4>
+        <input type="radio" name="q2" id="correct2"> Monthly<br>
+        <input type="radio" name="q2" id="wrong4"> Annually<br>
+        <input type="radio" name="q2" id="wrong5"> Only during a disaster<br>
+        <input type="radio" name="q2" id="wrong6"> Every two years<br>
+        
+        <h4 class="question">3. What is the safest action to take during an earthquake if you are indoors?</h4>
+        <input type="radio" name="q3" id="wrong7"> Run outside immediately<br>
+        <input type="radio" name="q3" id="correct3"> Drop, Cover, and Hold on <br>
+        <input type="radio" name="q3" id="wrong8"> Stand under a doorway<br>
+        <input type="radio" name="q3" id="wrong9"> Stay in bed<br>
+
+        <h4 class="question">4. What should you do if you smell gas after a natural disaster?</h4>
+        <input type="radio" name="q4" id="correct4"> Evacuate immediately and call the gas company<br>
+        <input type="radio" name="q4" id="wrong10"> Light a candle to check for gas leaks<br>
+        <input type="radio" name="q4" id="wrong11"> Stay in your home and ventilate<br>
+        <input type="radio" name="q4" id="wrong12"> Ignore it, the smell will go away<br>
+
+        <h4 class="question">5. Which of the following is NOT a type of natural disaster?</h4>
+        <input type="radio" name="q5" id="wrong14"> Flood<br>
+        <input type="radio" name="q5" id="wrong13"> Earthquake<br>
+        <input type="radio" name="q5" id="correct5"> Oil Spill<br>
+        <input type="radio" name="q5" id="wrong15"> Hurricane<br>
+
+        <h4 class="question">6. You should have at least one gallon of water per person per day stored for emergencies.</h4>
+        <input type="radio" name="q6" id="correct6"> True<br>
+        <input type="radio" name="q6" id="wrong16"> False<br>
+        
+        <h4 class="question">7. It's safe to return home immediately after a disaster, regardless of what authorities say.</h4>
+        <input type="radio" name="q7" id="wrong17"> True<br>
+        <input type="radio" name="q7" id="correct7"> False<br>
+
+        <h4 class="question">8. During a tornado, it's safer to go outside and watch the storm than to stay inside.</h4>
+        <input type="radio" name="q8" id="wrong18"> True<br>
+        <input type="radio" name="q8" id="correct8"> False<br>
+
+        <h4 class="question">9. You should include your pets in your emergency plan.</h4>
+        <input type="radio" name="q9" id="correct9"> True<br>
+        <input type="radio" name="q9" id="wrong19"> False<br>
+
+        <h4 class="question">10. Social media can be used to share important updates and communicate with others during a disaster.</h4>
+        <input type="radio" name="q10" id="correct10"> True<br>
+        <input type="radio" name="q10" id="wrong20"> False<br>
+        
+        <button id="submitBtn">Submit</button>
+    </section>
+
+    <script src="./quiz.js"></script>
+    <footer></footer>
+</body>
+</html>

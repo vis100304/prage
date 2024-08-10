@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --primary-color: #134B70;
+    --secondary-color: #ffffff;
+    --accent-color: #008080; /* Teal accent */
+    --background-color:#CDE8E5;
+    --button-hover-color: #007080;
+    --glow-color: rgba(19, 75, 112, 0.8); /* Teal glow */
+}
+
+body {
+    background: var(--background-color);
+    background-size: cover;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+    animation: subtleGradient 20s ease infinite;
+}
+
+@keyframes subtleGradient {
+    0% {
+        background-position: 0% 50%;
+        filter: brightness(1);
+    }
+    50% {
+        background-position: 100% 50%;
+        filter: brightness(1.2);
+    }
+    100% {
+        background-position: 0% 50%;
+        filter: brightness(1);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--secondary-color);
+    animation: fadeInDown 0.5s ease-out;
+}
+
+.back-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: var(--button-hover-color);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.login_box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--primary-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: var(--secondary-color);
+    animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input_box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--accent-color);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus~.label,
+.input-field:valid~.label {
+    top: -10px;
+    left: 10px;
+    background: var(--primary-color);
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.login-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: var(--glow-color);
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) scale(0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.login-button:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.login-button:hover {
+    transform: scale(1.05);
+    background:red;
+    box-shadow: 0 0 20px var(--glow-color), 0 0 40px var(--glow-color), 0 0 60px var(--glow-color);
+}
+
+.register {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register a {
+    font-weight: bold;
+    color: var(--accent-color);
+    
+}
+
+@media (max-width: 768px) {
+    .login_box {
+        padding: 30px;
+    }
+}
