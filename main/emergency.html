@@ -85,6 +85,14 @@ h2{
     position: relative;
     overflow: hidden;
 }
+.content {
+    padding: 40px;
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
 
 .grid-item:hover {
     transform: translateY(-10px);
@@ -129,21 +137,25 @@ h2{
     <body>
 
 <header class="header">
-    <button class="back-button" onclicgik="history.back()">← Back</button>
+  <button class="back-button"  onclick="goBack()">← Back</button>
     <span></span>
 </header>
 
     <div class="container">
       <h1 id="grad">GENERAL EMERGENCY PROCEDURES:</h1>
-      <p><b>Stay Calm:</b> Focus on keeping yourself and others safe.</p>
+      <section class="content">
+      
+       <p><b>Stay Calm:</b> Focus on keeping yourself and others safe.</p>
       <p><b>Follow Official Instructions:</b> Adhere to guidance from local authorities
         and emergency services.
       </p>
       <p>
         <b>Avoid Panicking: </b>Make decisions based on facts and reliable sources.
       </p>
+      </section>
 
       <h1 id="grad">SPECIAL TYPES OF DISASTERS:</h1>
+      <section class="content">
       <h2>EARTHQUAKES</h2>
       <p>
         
@@ -171,6 +183,7 @@ h2{
         <b> Cover Yourself:</b> Protect your head and neck with your arms
         or a sturdy object.
       </p>
+      </section>
       <h1 id="grad">PREPAREDNESS TIPS:</h1>
       <div class="services">
         <div class="service">
@@ -206,6 +219,7 @@ h2{
       </div>
       </div>
       <h1 id="grad">PERSONAL SAFETY TIPS:</h1>
+      <section class="content">
       <h2>HOME SAFETY:</h2>
       <p>
     <b>Secure Heavy Items:</b> Anchor heavy furniture and application to walls.<br/>
@@ -225,7 +239,7 @@ h2{
         medical equipment.<br/><b> Assistive Devices:</b> Prepare for accessible evacuation
         plans and devices if needed.
       </p>
-      
+      </section>
       
     
       
