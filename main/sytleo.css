@@ -247,7 +247,16 @@ section {
     transform: rotate(45deg);
     filter: blur(20px);
 }
-
+#grad{
+    color:white;
+    background:linear-gradient(135deg,#134B70,#508C9B);
+    color: #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-in-out;
+}
 .grid-item:hover:before {
     filter: blur(30px);
     top: 0;

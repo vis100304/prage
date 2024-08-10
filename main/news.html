@@ -77,7 +77,7 @@ h2{
        </head>
        <body>
         <header class="header">
-            <button class="back-button" onclick="history.back()">← Back</button>
+            <button class="back-button"  onclick="goBack()">← Back</button>
             <span></span>
         </header>
         <div class="container">
@@ -130,6 +130,12 @@ The Wayanad landslides have sparked political discussions, with Congress leaders
             </section>
 
         </div>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
 
 
        </body>
+       </html>

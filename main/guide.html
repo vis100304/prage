@@ -87,7 +87,8 @@ h2{
        </head>
        <body>
         <header class="header">
-            <button class="back-button" onclick="history.back()">← Back</button>
+            <button class="back-button"  onclick="goBack()">← Back</button>
+        
             <span></span>
         </header>
         <section>
@@ -185,5 +186,12 @@ h2{
 </div>
             </div>
         </section>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    
         
        </body>
+       </html>
