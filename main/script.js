@@ -1,17 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Login form validation
-    const loginForm = document.getElementById("loginForm");
+    // Predefined users for authentication (replace with actual data in a real application)
+    const users = {
+        "codefury": "password123",
+        "phoe": "phoe2024",
+    };
+
+    // Login form validation with authentication
+    const loginForm = document.querySelector("form");  // Corrected to select the form element
     if (loginForm) {
         loginForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
             const username = document.getElementById("user").value;
             const password = document.getElementById("pass").value;
 
             if (username === "" || password === "") {
                 alert("Please fill in all fields");
-                event.preventDefault(); // Prevent form submission
+            } else if (users[username] && users[username] === password) {
+                alert("Login successful!");
+                // Redirect to another page or perform any other desired actions
+                location.href = "index.html"; // Example of redirection
             } else {
-                alert("Form submitted successfully!");
-                // Perform actual form submission here if needed
+                alert("Invalid username or password");
             }
         });
     }
@@ -39,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             lines.forEach((line, index) => {
                 const angle = (index / lines.length) * 360;
                 const offset = 20 + 5 * Math.sin((event.clientX + event.clientY) * 0.05);
-                line.style.transform = "rotate(${angle}deg) translate(${offset}px)";
+                line.style.transform = `rotate(${angle}deg) translate(${offset}px)`;
             });
         });
 

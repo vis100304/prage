@@ -182,6 +182,22 @@ section {
 
 }
 
+.step button{
+    background-color:lightslategray;
+    color: #EEEEEE;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+   z-index: 1;
+   position: relative;
+
+}
+.step button:hover{
+    background-color: red;
+}
+
 #testimonials button:hover{
     background-color: red ;
 }
